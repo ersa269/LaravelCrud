@@ -19,3 +19,8 @@ Route::get('/', function () {
 });
 Route::get('create',[CreateController::class,'create'])->name('create');
 Route::post('store',[CreateController::class,'store'])->name('store');
+Route::get('show',[CreateController::class,'show'])->name('show');
+Route::get('edit/{id}',[CreateController::class,'edit'])->name('edit');
+Route::post('update{id}',[CreateController::class,'update'])->name('update');
+Route::get('delete/{id}',[CreateController::class,'delete'])->name('delete');
+
